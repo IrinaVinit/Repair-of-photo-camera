@@ -1,26 +1,7 @@
 const buttonsSubmit = document.querySelectorAll(".button-submit");
 const inputElements = document.querySelectorAll(".form__item");
 
-// function setTextOfButton() {
-//   const viewport_width = Math.max(
-//     document.documentElement.clientWidth,
-//     window.innerWidth || 0
-//   );
-//   if (viewport_width < 496) {
-//     buttonsSubmit.forEach((btn) => {
-//       const arr = btn.textContent.trim().split(" ");
-//
-//       const icon = arr.slice(arr.length - 1).join();
-//       //   console.log(arr.slice(arr.length - 1).join());
-//       btn.textContent = icon;
-//     });
-//   } else {
-//     buttonsSubmit.forEach((btn) => {
-//       btn.textContent =
-//     });
-//   }
-// }
-
+//установление текста на кнопку в зависимости от ширины экрана
 function setTextOfButton(text) {
   const viewport_width = Math.max(
     document.documentElement.clientWidth,
@@ -31,7 +12,6 @@ function setTextOfButton(text) {
     buttonsSubmit.forEach((btn) => {
       const arr = btn.textContent.trim().split(" ");
       const icon = arr.slice(arr.length - 1).join();
-      //   console.log(arr.slice(arr.length - 1).join());
       btn.textContent = icon;
     });
   } else {
@@ -41,15 +21,12 @@ function setTextOfButton(text) {
   }
 }
 
-// текст кнопки при загрузке страницы
-setTextOfButton("Отремонтируйте камеру ✌️");
-addEventListenerWindow("Отремонтируйте камеру ✌️");
-
 // слушаем изменение размеров экрана
 function addEventListenerWindow(text) {
   window.addEventListener("resize", () => setTextOfButton(text));
 }
 
+//проверка валидности инпута
 function checkInputValidity(input) {
   const isInputValid = input.validity.valid;
 
@@ -63,6 +40,10 @@ function checkInputValidity(input) {
     addEventListenerWindow("Отремонтируйте камеру ✌️");
   }
 }
+
+// текст кнопки при загрузке страницы
+setTextOfButton("Отремонтируйте камеру ✌️");
+addEventListenerWindow("Отремонтируйте камеру ✌️");
 
 inputElements.forEach((input) => {
   input.addEventListener("input", () => checkInputValidity(input));

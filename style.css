@@ -1,82 +1,3 @@
-.page {
-  font-family: "Roboto";
-  font-style: normal;
-  max-width: 1440px;
-  padding: 60px 0;
-  background: #000000;
-  min-height: 100vh;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1100px) {
-  .page {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  .page {
-    padding: 24px 20px 20px;
-  }
-}
-
-.header {
-  padding-bottom: 60px;
-}
-
-@media screen and (max-width: 1100px) {
-  .header {
-    padding-bottom: 32px;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  .header {
-    padding-bottom: 20px;
-  }
-}
-
-.section {
-  padding: 60px 0;
-}
-
-@media screen and (max-width: 610px) {
-  .section {
-    padding: 40px 0 30px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .section_tablet {
-    padding: 20px 0 60px;
-  }
-}
-@media screen and (max-width: 610px) {
-  .section_mobile {
-    padding: 20px 0;
-  }
-}
-
-.container__desktop_narrow {
-  padding-left: 160px;
-  padding-right: 160px;
-}
-
-.container__desktop_wide {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-@media screen and (max-width: 1100px) {
-  .container_tablet {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 .logo-group {
   display: flex;
@@ -88,7 +9,7 @@
   font-size: 22px;
   line-height: 30px;
   color: #ffffff;
-  margin: 0 20px 0 0;
+  margin: 0 26px 0 0;
 }
 
 @media screen and (max-width: 610px) {
@@ -274,10 +195,6 @@
   }
 }
 
-/* .photo {
-  overflow: hidden;
-} */
-
 .grids-firstRow {
   display: grid;
   grid-template-columns: 448px minmax(180px, 912px);
@@ -294,26 +211,26 @@
   }
 }
 
-.grids-firstRow__item:nth-of-type(1n) {
-  background-image: url(./image/photo-small-round-corners.png);
+.grids-firstRow__item:nth-of-type(1) {
+  background-image: url(./src/image/photo-small-round-corners.png);
   border-radius: 10px;
 }
 
 @media screen and (max-width: 770px) {
-  .grids-firstRow__item:nth-of-type(1n) {
+  .grids-firstRow__item:nth-of-type(1) {
     aspect-ratio: 1.9;
     background-size: contain;
     background-repeat: no-repeat;
   }
 }
 
-.grids-firstRow__item:nth-of-type(2n) {
+.grids-firstRow__item:nth-of-type(2) {
   background: #ffd233;
   border-radius: 10px;
 }
 
 @media screen and (max-width: 770px) {
-  .grids-firstRow__item:nth-of-type(2n) {
+  .grids-firstRow__item:nth-of-type(2) {
     aspect-ratio: 4.17;
   }
 }
@@ -332,21 +249,21 @@
   }
 }
 
-.grids-secondRow__item:nth-of-type(1n) {
+.grids-secondRow__item:nth-of-type(1) {
   background: #25e197;
   border-radius: 10px;
 }
 
 @media screen and (max-width: 770px) {
-  .grids-secondRow__item:nth-of-type(1n) {
+  .grids-secondRow__item:nth-of-type(1) {
     aspect-ratio: 2.25;
     border-radius: 10px;
   }
 }
 
-.grids-secondRow__item:nth-of-type(2n) {
+.grids-secondRow__item:nth-of-type(2) {
   background-color: transparent;
-  background-image: url(./image/photo-big-round-corners.png);
+  background-image: url(./src/image/photo-big-round-corners.png);
   aspect-ratio: 1.32;
   background-size: contain;
   background-repeat: no-repeat;
@@ -662,6 +579,7 @@
 .footer-text {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .formLabel_type_footer {
