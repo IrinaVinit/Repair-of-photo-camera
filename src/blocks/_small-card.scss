@@ -1,0 +1,39 @@
+.small-card {
+    background: #1c1c1e;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.small-card:hover {
+    background: #232327;
+}
+
+.small-card__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #eaeaf0;
+    margin: 0 0 38px 0;
+}
+
+@media screen and (max-width: 520px) {
+    .small-card__title {
+        margin-bottom: 36px;
+    }
+}
+
+.small-card__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #8e8e98;
+    margin: 0;
+}
+
+@media screen and (max-width: 520px) {
+    .small-card__text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

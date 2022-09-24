@@ -1,0 +1,57 @@
+.card {
+    padding: 40px;
+    background: $cardColor;
+    border-radius: 16px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+
+    @include phones-small {
+        max-width: 380px;
+        height: 282px;
+        padding: 20px;
+    }
+
+    &:hover {
+        background: #232327;
+    }
+
+    &__label {
+        margin: 0 0 20px 0;
+        @include text-font(400, 18px, 18px);
+        color: #8e8e98;
+    }
+
+    &__title {
+        margin: 0 0 40px 0;
+        @include text-font(400, 32px, 32px);
+        color: $textColor;
+
+        @include phones-small {
+            font-size: 24px;
+        }
+    }
+
+    &__text {
+        margin: 0 0 54px 0;
+        line-height: 40px;
+        color: #8e8e98;
+
+        @include phones-small {
+            @include text-font(400, 12px, 18px);
+        }
+    }
+
+    &__prices {
+        @include text-font(400, 14px, 14px);
+        color: $secondColor;
+        margin: 0;
+        position: absolute;
+        bottom: 40px;
+
+        @include phones-small {
+            @include text-font(400, 12px, 18px);
+        }
+    }
+
+}
