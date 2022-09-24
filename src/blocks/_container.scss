@@ -9,8 +9,8 @@
         padding-right: 30px;
     }
 
-    @media screen and (max-width: $laptop) {
-        &_tablet {
+    &_tablet {
+        @include laptop {
             padding-left: 0;
             padding-right: 0;
         }

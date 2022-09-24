@@ -1,8 +1,13 @@
 @import '../vendor/normalize.css';
 @import '../vendor/fonts/fonts.css';
 @import './variables';
-@import './mixins/background';
+@import './mixins/index';
 @import '../blocks/page';
 @import '../blocks/header';
 @import '../blocks/section';
 @import '../blocks/container';
+@import '../blocks/logo-group';
+@import '../blocks/title';
+@import '../blocks/form';
+@import '../blocks/button-submit';
+@import '../blocks/formLabel';

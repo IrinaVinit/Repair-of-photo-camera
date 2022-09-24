@@ -1,0 +1,39 @@
+.title {
+    @include text-font(400, 112px, 112px);
+    color: $textColor;
+    margin: 60px 0 20px;
+
+    @media screen and (max-width: 910px) {
+        @include text-font(400, 70px, 90px);
+        margin-top: 70px;
+        margin-bottom: 0;
+
+    }
+
+    @media screen and (max-width: 764px) {
+        @include text-font(400, 50px, 60px);
+        margin-top: 60px;
+        margin-bottom: 10px;
+
+    }
+
+    &__span {
+        @include text-font(400, 80px, 70px);
+        color: $textColor;
+        margin: 0 0 230px;
+
+        @media screen and (max-width: 1350px) {
+            @include text-font(400, 50px, 60px);
+        }
+
+        @include laptop {
+            margin-bottom: 470px;
+        }
+
+        @media screen and (max-width: 764px) {
+            @include text-font(400, 30px, 38px);
+            margin-bottom: 260px;
+        }
+    }
+
+}

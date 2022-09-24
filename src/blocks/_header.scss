@@ -1,15 +1,11 @@
 .header {
     padding-bottom: 60px;
-}
 
-@media screen and (max-width: $laptop) {
-    .header {
+    @include laptop {
         padding-bottom: 32px;
     }
-}
 
-@media screen and (max-width: $phones) {
-    .header {
+    @include phones {
         padding-bottom: 20px;
     }
 }
