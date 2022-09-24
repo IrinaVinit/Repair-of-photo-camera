@@ -1,0 +1,9 @@
+.description {
+    &__text {
+        margin-bottom: 60px;
+
+        @include phones {
+            margin-bottom: 20px;
+        }
+    }
+}

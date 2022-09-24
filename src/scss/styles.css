@@ -377,4 +377,13 @@
   background-color: transparent;
   aspect-ratio: 1.32;
   border-radius: 10px;
+}
+
+.description__text {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 610px) {
+  .description__text {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */

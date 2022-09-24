@@ -1,14 +1,5 @@
 
 
-.description__text {
-  margin-bottom: 60px;
-}
-
-@media screen and (max-width: 610px) {
-  .description__text {
-    margin-bottom: 20px;
-  }
-}
 
 .description__enthusiasm {
   margin: 0;
