@@ -1,0 +1,29 @@
+.grids-secondRow {
+    display: grid;
+    grid-template-columns: minmax(173px, 630px) minmax(455px, 6fr);
+    grid-template-rows: minmax(1fr, 6fr);
+    gap: 20px;
+
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item:nth-of-type(1) {
+        background: $secondColor;
+        border-radius: 10px;
+
+        @include tablets {
+            aspect-ratio: 2.25;
+        }
+    }
+
+    &__item:nth-of-type(2) {
+        @include background('../image/photo-big-round-corners.png');
+        background-color: transparent;
+        aspect-ratio: 1.32;
+        border-radius: 10px;
+    }
+
+}
