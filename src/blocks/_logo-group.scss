@@ -27,4 +27,13 @@
         margin: 0;
     }
 
+    &_footer {
+        padding-top: 60px;
+        border-top: 2px solid #151515;
+
+        @include phones-small {
+            padding-top: 30px;
+        }
+
+    }
 }

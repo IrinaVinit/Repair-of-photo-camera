@@ -36,5 +36,23 @@
             background: $hoverColor;
             cursor: pointer;
         }
+
+        &_type_footer {
+            @media screen and (max-width: 768px) {
+                width: 348px;
+            }
+
+            @media screen and (max-width: 667px) {
+                width: 229px;
+            }
+        }
+    }
+
+    &_type_footer {
+        margin: 84px 0 0 0;
+
+        @include phones-small {
+            margin-top: 184px;
+        }
     }
 }

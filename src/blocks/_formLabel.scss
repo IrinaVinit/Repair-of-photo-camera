@@ -11,4 +11,22 @@
         margin-left: 0;
     }
 
+
+    &_type_footer {
+        margin: 18px 0 0 0;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 60px;
+        }
+
+        @include phones-small {
+            margin: 10px 0 40px;
+        }
+    }
+
+    &__team {
+        @include text-font(400, 12px, 18px);
+        color: $thirdColor;
+        margin: 0;
+    }
 }

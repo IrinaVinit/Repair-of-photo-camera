@@ -1,5 +1,12 @@
 const buttonsSubmit = document.querySelectorAll(".button-submit");
 const inputElements = document.querySelectorAll(".form__item");
+const form = document.forms.form;
+// console.dir(form);
+// const formInput = form.email;
+// console.dir(formInput);
+console.dir(inputElements);
+
+
 
 //установление текста на кнопку в зависимости от ширины экрана
 function setTextOfButton(text) {
@@ -48,3 +55,15 @@ addEventListenerWindow("Отремонтируйте камеру ✌️");
 inputElements.forEach((input) => {
   input.addEventListener("input", () => checkInputValidity(input));
 });
+
+// работаем с плейсхолдером
+inputElements.forEach((input) => {
+  const inputPlaceholder = input.placeholder;
+  input.addEventListener("focus",function (e) {
+    input.placeholder = '';
+  })
+
+  input.addEventListener("blur",function (e) {
+    input.placeholder = inputPlaceholder;
+})
+})

@@ -1,0 +1,7 @@
+.footer {
+    padding-top: 180px;
+
+    @include laptop {
+        padding-top: 150px;
+    }
+}
