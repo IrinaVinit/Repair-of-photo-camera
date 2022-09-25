@@ -24,9 +24,4 @@
         }
     }
 
-    &__team {
-        @include text-font(400, 12px, 18px);
-        color: $thirdColor;
-        margin: 0;
-    }
 }

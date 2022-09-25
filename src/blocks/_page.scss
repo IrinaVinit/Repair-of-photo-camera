@@ -19,4 +19,21 @@
     @include phones {
         padding: 24px 20px 20px;
     }
+
+    &__desktop_narrow {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    &__desktop_wide {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &__tablet {
+        @include laptop {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }
