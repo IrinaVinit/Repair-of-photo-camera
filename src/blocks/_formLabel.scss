@@ -1,0 +1,27 @@
+.formLabel {
+    @include text-font(400, 12px, 18px);
+    margin: 12px 0 0 10px;
+    color: $thirdColor;
+
+    @include laptop {
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 400px) {
+        margin-left: 0;
+    }
+
+
+    &_type_footer {
+        margin: 18px 0 0 0;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 60px;
+        }
+
+        @include phones-small {
+            margin: 10px 0 40px;
+        }
+    }
+
+}

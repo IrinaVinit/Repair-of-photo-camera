@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./scss/styles.css" />
     <title>Ремонт плёночных фотоаппаратов</title>
   </head>
   <body class="page">
-    <header class="header container__desktop_narrow container_tablet">
+    <header class="header page__desktop page__desktop_narrow page__tablet">
       <div class="logo-group">
         <p class="logo-group__name">C-Works</p>
         <div class="logo-group__banner-background">
           <p class="logo-group__banner-text">мы открылись</p>
         </div>
       </div>
-      <h1 class="title">Ремонт</h1>
-      <p class="title__span">Плёночных фотоаппаратов</p>
+      <h1 class="header__title">Ремонт</h1>
+      <p class="header__title-span">Плёночных фотоаппаратов</p>
 
-      <form action="" class="form" method="POST" name="form">
+      <form class="form" method="POST" name="form">
         <input
           class="form__item"
           type="email"
@@ -39,8 +38,8 @@
     </header>
 
     <main class="content">
-      <section
-        class="photo section section_tablet section_mobile container__desktop_wide container_tablet"
+      <div
+        class="photo section section_tablet section_mobile page__desktop page__desktop_wide page__tablet"
       >
         <div class="grids-firstRow">
           <div class="grids-firstRow__item"></div>
@@ -50,9 +49,9 @@
           <div class="grids-secondRow__item"></div>
           <div class="grids-secondRow__item"></div>
         </div>
-      </section>
-      <section
-        class="description section container__desktop_narrow container_tablet"
+      </div>
+      <div
+        class="description section page__desktop page__desktop_narrow page__tablet"
       >
         <p class="description__text section__text">
           Мы ремонтируем плёночные фотоаппараты. Полностью механические камеры,
@@ -62,8 +61,8 @@
         <p class="description__enthusiasm section-title">
           Для энтузиастов, от энтузиастов 👈
         </p>
-      </section>
-      <ul class="services section container__desktop_narrow container_tablet">
+      </div>
+      <ul class="services section page__desktop page__desktop_narrow page__tablet">
         <li class="card">
           <p class="card__label">CLA</p>
           <h2 class="card__title">Чистка камер.</h2>
@@ -84,7 +83,7 @@
       </ul>
 
       <section
-        class="guarantee section container__desktop_narrow container_tablet"
+        class="guarantee section page__desktop page__desktop_narrow page__tablet"
       >
         <h2 class="guarantee__title section-title">Полная гарантия ⚡️</h2>
         <ul class="small-cards">
@@ -118,7 +117,7 @@
       </section>
 
       <section
-        class="donation section container__desktop_narrow container_tablet"
+        class="donation section page__desktop page__desktop_narrow page__tablet"
       >
         <h2 class="donation__title section-title">Поддержите нас 🤝</h2>
         <button class="butttonToWrite">
@@ -131,14 +130,14 @@
       </section>
     </main>
 
-    <footer class="footer container__desktop_narrow container_tablet">
+    <footer class="footer page__desktop page__desktop_narrow page__tablet">
       <div class="logo-group logo-group_footer">
         <p class="logo-group__name">C-Works</p>
         <div class="logo-group__banner-background">
           <p class="logo-group__banner-text">мы открылись</p>
         </div>
       </div>
-      <form action="" class="form form_type_footer" method="POST" name="form">
+      <form class="form form_type_footer" method="POST" name="form">
         <input
           class="form__item form__item_type_footer"
           type="email"
@@ -159,7 +158,7 @@
         <p class="formLabel formLabel_type_footer">
           Напишите нам, и мы свяжемся с вами.
         </p>
-        <p class="formLabel__team">© C-Works, 2021.</p>
+        <p class="formLabel-team">© C-Works, 2021.</p>
       </div>
     </footer>
     <script src="./pages/index.js"></script>

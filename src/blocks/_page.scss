@@ -1,0 +1,39 @@
+.page {
+    @include text-font(400, 24px, 24px);
+    max-width: $desktop;
+    padding: 60px 0;
+    background: $mainColor;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+
+    @include laptop {
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+
+    @include phones {
+        padding: 24px 20px 20px;
+    }
+
+    &__desktop_narrow {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    &__desktop_wide {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &__tablet {
+        @include laptop {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.form {
+    display: flex;
+
+    &__item {
+        width: 348px;
+        height: 50px;
+        background: rgba(142, 142, 152, 0.2);
+        border-radius: 8px 0px 0px 8px;
+        border: 0;
+        padding: 0;
+        caret-color: $textColor;
+        outline: none;
+        color: $textColor;
+        font-family: inherit;
+        @include text-font(400, 14px, 24px);
+        letter-spacing: 0.375px;
+        text-indent: 20px;
+
+        @media screen and (max-width: 910px) {
+            width: 427px;
+        }
+
+        @media screen and (max-width: 720px) {
+            width: 250px;
+        }
+
+        @media screen and (max-width: 519px) {
+            width: 229px;
+        }
+
+        &::placeholder {
+            font-family: inherit;
+        }
+
+        &:hover {
+            background: $hoverColor;
+            cursor: pointer;
+        }
+
+        &_type_footer {
+            @media screen and (max-width: 768px) {
+                width: 348px;
+            }
+
+            @media screen and (max-width: 667px) {
+                width: 229px;
+            }
+        }
+    }
+
+    &_type_footer {
+        margin: 84px 0 0 0;
+
+        @include phones-small {
+            margin-top: 184px;
+        }
+    }
+}

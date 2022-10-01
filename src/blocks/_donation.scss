@@ -1,0 +1,14 @@
+.donation {
+    &__title {
+        margin: 0 0 90px 0;
+
+        @include laptop {
+            margin-bottom: 80px;
+        }
+
+        @include phones-small {
+            margin-bottom: 50px;
+        }
+    }
+
+}
